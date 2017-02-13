@@ -1,6 +1,6 @@
 ## The first function makes a list with methods that set and get a matrix and its inverse in an intrinsic environment variable
 ## The second function is passed the list from the first and attempts to calculate and set its inverse.  If the inverse is already set, teh cached value is used
-
+## makeCacheMatrix will create a matrix x, and expose three methods to set/get x and its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   cachedInv <- NULL ## initialize inverse
